@@ -4,7 +4,7 @@
 Apply a shallow `toArray` to a `Collection`.
 
 ## Huh?
-Calling `toArray` of a Collection with Eloquent models (e.g., `User::all()`) also applies `toArray` to each item in the collection.
+Calling `toArray` of a `Collection` with Eloquent models (e.g., `User::all()`) also applies `toArray` to each item in the collection. Here's a comparison with `Collection toArray`:
 
 ```diff
 - User::all()->toArray(); // [[], [] []];
