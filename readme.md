@@ -6,9 +6,9 @@ Apply a shallow `toArray` to a `Collection`.
 ## Huh?
 Calling `toArray` of a Collection with Eloquent models (e.g., `User::all()`) also applies `toArray` to each item in the collection.
 
-```php
-User::all()->toArray(); // [[], [] []];
-collection_shallow_to_array(User::all()); // [User, User, User]
+```diff
+- User::all()->toArray(); // [[], [] []];
++ collection_shallow_to_array(User::all()); // [User, User, User]
 ```
 
 ## Installing
