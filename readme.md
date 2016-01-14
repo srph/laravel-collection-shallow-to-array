@@ -3,8 +3,8 @@
 
 Apply a shallow `toArray` to a `Collection`.
 
-## Dropped
-Use [`Collection#all`](https://laravel.com/api/5.2/Illuminate/Support/Collection.html#method_all) instead.
+## Deprecation Notice
+Use [`Collection#all`](https://laravel.com/api/5.2/Illuminate/Support/Collection.html#method_all) instead. This utility doesn't make any sense; created out of author's laziness to read the API Documentation.
 
 ## Huh?
 Calling `toArray` of a `Collection` with Eloquent models (e.g., `User::all()`) also applies `toArray` to each item in the collection. Here's a comparison with `Collection toArray`:
